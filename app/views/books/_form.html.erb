@@ -16,6 +16,11 @@
     <%= form.text_field :title %>
   </div>
 
+  <div class="field">
+    <%= form.label :publish %>
+    <%= form.date_select :publish, { :start_year => 1800} %> 
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
